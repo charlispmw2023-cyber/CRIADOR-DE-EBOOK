@@ -291,3 +291,34 @@ Billing{userId, plan, usage{tokens, images}, invoices[]}
 - **Free/Trial**: 1 projeto ativo, 1 export por formato, 10 imagens.
 - **Pro**: projetos ilimitados, 5 exportações por projeto, 20 imagens, temas personalizados.
 - **Enterprise**: SSO, limites ampliados, controles de compliance.
+
+## 16) Plano de Testes (QA)
+
+**Objetivo**: validar se o usuário consegue completar o fluxo fim a fim com qualidade editorial, acessibilidade e exportações consistentes.
+
+### Testes Funcionais (Happy Path)
+
+1. **Briefing completo**: preencher título, objetivo, público, idioma, tom/voz, keywords, tamanho alvo (30–90) e imagens (10–20).
+2. **Gerar esboço**: validar 15 capítulos e edição por drag-and-drop.
+3. **Gerar texto**: gerar todos os capítulos e revisar contagem de páginas/palavras.
+4. **Imagens**: gerar 10–20 imagens, validar legenda e alt-text obrigatórios.
+5. **Design/Capa/TOC/Metadados**: confirmar consistência visual e validações de ePub.
+6. **Exportações**: PDF/ePub/DOCX/HTML/MD, com downloads íntegros.
+
+### Testes de Validação
+
+- Campos obrigatórios do briefing com mensagens claras.
+- Aviso para imagens > 20 e bloqueio suave para < 10 antes de exportar.
+- TOC com links válidos e capítulos correspondentes.
+- Metadados obrigatórios para ePub preenchidos.
+
+### Testes de Acessibilidade
+
+- Navegação por teclado completa.
+- Contraste mínimo 4.5:1.
+- Focus ring visível em todos os controles.
+
+### Testes de Internacionalização
+
+- Idioma padrão PT-BR e troca de idioma mantendo layout.
+- Tradução integral com preservação de hierarquia e estilos.
